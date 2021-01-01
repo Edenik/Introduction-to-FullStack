@@ -1,9 +1,13 @@
-const makeRequest = async (url, headers, method) => {
+const makeRequest = async (url, headers, method, body) => {
     try {
-        let response = await fetch(url, { method, headers })
-        return await response.json();
+        // we can use both ways -
+        // let response = await fetch(url, { method, headers });
+        // return await response.json();
+
+        // or -
+        return await (await fetch(url, { method, headers })).json();
     } catch (e) {
-        console.log(e)
+        console.log(`Error: ${e}`)
     }
 }
 
@@ -15,9 +19,14 @@ const translate = async (sentence, langFrom, langTo) => {
         "x-rapidapi-key": key,
         "x-rapidapi-host": host,
     };
+    const method = "GET";
+    // const body = {};
+    // in this request we dont need to add request body
+
+
     let translatedText;
-    await getRequest(url, headers, "GET").then(data => {
-        translatedText = data.responseData.translatedText
+    await makeRequest(url, headers, method, null).then(data => {
+        translatedText = data.responseData.translatedText;
     });
     return translatedText;
 }
@@ -25,5 +34,5 @@ const translate = async (sentence, langFrom, langTo) => {
 const translateStringWithNames = async (string, names) => {
     console.log('translating....');
     const stringInEnglish = await translate(string, 'iw', 'en');
-    console.log(stringInEnglish + " " + names);
+    console.log(`${stringInEnglish} - ${names}`);
 }
