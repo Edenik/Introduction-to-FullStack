@@ -5,7 +5,7 @@ const makeRequest = async (url, headers, method, body) => {
         // return await response.json();
 
         // or -
-        return await (await fetch(url, { method, headers })).json();
+        return await (await fetch(url, { method, headers,body })).json();
     } catch (e) {
         console.log(`Error: ${e}`)
     }
