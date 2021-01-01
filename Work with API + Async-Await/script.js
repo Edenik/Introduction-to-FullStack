@@ -10,7 +10,7 @@ const makeRequest = async (url, headers, method) => {
 const translate = async (sentence, langFrom, langTo) => {
     const url = `https://translated-mymemory---translation-memory.p.rapidapi.com/api/get?langpair=${langFrom}%7C${langTo}&q=${encodeURI(sentence)}&mt=1&onlyprivate=0&de=a%40b.c`;
     const host = "translated-mymemory---translation-memory.p.rapidapi.com";
-    const key = [PUT_API_KEY_HERE]
+    const key = [PUT_API_KEY_HERE];
     const headers = {
         "x-rapidapi-key": key,
         "x-rapidapi-host": host,
