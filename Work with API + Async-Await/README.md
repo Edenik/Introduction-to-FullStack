@@ -9,4 +9,4 @@
 - [X] - translateStringWithNames(string, names) - gets a string and names. Translating the string and then log the translated string with the given names.
 
 ## To Run this app :
-- [X] -  Replace "[PUT_API_KEY_HERE]" on function translate() with your API Key.
+- [X] -  Replace [PUT_API_KEY_HERE] value with your API Key.
