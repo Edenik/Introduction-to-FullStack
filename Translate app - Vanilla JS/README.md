@@ -20,4 +20,6 @@
 
 
 ## To Run this app :
-- [X] -  Replace [PUT_API_KEY_HERE] value with your API Key.
+- [X] -  Replace [DETECT_LANGUAGE_API_KEY] value with your API Key from [Detect Language API](detectlanguage.com).
+- [X] -  Replace [MY_MEMORY_API_KEY] value with your API Key from [MyMemory - Translation Memory](https://rapidapi.com/translated/api/mymemory-translation-memory).
+ 
