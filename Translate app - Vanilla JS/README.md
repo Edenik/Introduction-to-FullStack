@@ -2,7 +2,10 @@
 
 # Translate Text Worldwide
 
-## Functions :
+## Demo: 
+[LIVE DEMO: Translate Text Worldwide](https://Edenik.com/translate)
+
+## Functions:
 - [X] - init - first function to run on the load of the app
 - [X] - makeRequest(url, headers, method) - get a url, headers and method to run fetch function. If there is an error with the function, it'll throw error. else it'll return the response in json format. 
 - [X] - getLanguagesFromJsonFile() - make a fetch request with "makeRequest()" to read the "languages.json" file and return the data in json format. Also calls "setLanguageOnSelect()" when the request is suceess.
@@ -19,7 +22,7 @@
 [REST COUNTRIES](https://restcountries.eu)
 
 
-## To Run this app :
+## To Run this app:
 - [X] -  Replace [DETECT_LANGUAGE_API_KEY] value with your API Key from [Detect Language API](detectlanguage.com).
 - [X] -  Replace [MY_MEMORY_API_KEY] value with your API Key from [MyMemory - Translation Memory](https://rapidapi.com/translated/api/mymemory-translation-memory).
  
