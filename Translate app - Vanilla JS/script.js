@@ -24,15 +24,17 @@ const getLanguagesFromJsonFile = async () => {
 
 const setLanguageOnSelect = (elementId, data) => {
     document.getElementById(elementId).innerHTML = `
-    <label for="${elementId}" id="${elementId == 'fromLang' ? 'fromLangLabel' : 'toLangLabel'}">${elementId == 'fromLang' ? 'From Language:' : 'To Language:'}</label>
+    <label for="${elementId}" id="${elementId == 'fromLang' ? 'fromLangLabel' : 'toLangLabel'}">
+        ${elementId == 'fromLang' ? 'From Language:' : 'To Language:'}
+    </label>
     <select id="${elementId}Selector" class="form-control">
-    <option>Detect Language</option>
-    ${data.map(lang =>
+        <option>Detect Language</option>
+        ${data.map(lang =>
         (elementId == 'toLang' && lang['name'] === 'English') ?
-            `<option value="${lang['code']}" selected>${lang['name']}</option>` :
-            `<option value="${lang['code']}">${lang['name']}</option>`
-    ).join('')}
-    </select>`;;
+        `<option value="${lang['code']}" selected>${lang['name']}</option>` :
+        `<option value="${lang['code']}">${lang['name']}</option>`
+        ).join('')}
+    </select>`;
 }
 
 
@@ -125,8 +127,8 @@ const setCountriesOnResult = (countries, elementId) => {
     <h4>${countries[0].languages[0].name} is a mother tongue language at:</h4>
     ${countries.map(country => `
     <p>
-    <strong>${country['name']}</strong> -
-    <img src="${country['flag']}" alt="${country['name']}" height="25" width="25">
+        <strong>${country['name']}</strong> -
+        <img src="${country['flag']}" alt="${country['name']}" height="25" width="25">
     </p>
     `).join('')}`
 }
