@@ -1,0 +1,39 @@
+body{
+    background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+}
+.translate-form{
+    background: #fff;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+    padding: 25px;
+}
+.translate-form .form-control{
+    border-radius:1rem;
+}
+
+.translate-form h3{
+    padding-top: 10px;
+    text-align: center;
+    color: #0062cc;
+}
+.translate-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
