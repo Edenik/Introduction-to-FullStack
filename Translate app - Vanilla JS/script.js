@@ -10,7 +10,6 @@ const makeRequest = async (url, headers, method) => {
     return response.json();
 }
 
-
 const getLanguagesFromJsonFile = async () => {
     const url = `./languages.json`;
     await makeRequest(url, {}, "GET").then(data => {
@@ -18,7 +17,7 @@ const getLanguagesFromJsonFile = async () => {
         setLanguageOnSelect('toLang', data);
         languages = data;
     }).catch(err => {
-        console.log(err);
+        alert(err);
     });
 }
 
@@ -31,12 +30,11 @@ const setLanguageOnSelect = (elementId, data) => {
         <option>Detect Language</option>
         ${data.map(lang =>
         (elementId == 'toLang' && lang['name'] === 'English') ?
-        `<option value="${lang['code']}" selected>${lang['name']}</option>` :
-        `<option value="${lang['code']}">${lang['name']}</option>`
-        ).join('')}
+            `<option value="${lang['code']}" selected>${lang['name']}</option>` :
+            `<option value="${lang['code']}">${lang['name']}</option>`
+    ).join('')}
     </select>`;
 }
-
 
 const translateMessage = async () => {
     const fromLangSelectorValue = document.getElementById('fromLangSelector').value;
@@ -58,7 +56,12 @@ const translateMessage = async () => {
         fromLang = fromLangSelectorValue;
     }
 
-    Promise.all([getCountriesFromLngCode(fromLang == 'iw' ? 'he' : fromLang), getCountriesFromLngCode(toLangSelectorValue == 'iw' ? 'he' : toLangSelectorValue)]).then((values) => {
+    const promises = [
+        getCountriesFromLngCode(fromLang == 'iw' ? 'he' : fromLang),
+        getCountriesFromLngCode(toLangSelectorValue == 'iw' ? 'he' : toLangSelectorValue)
+    ];
+
+    Promise.all(promises).then((values) => {
         setCountriesOnResult(values[0], 'fromLangCountries');
         setCountriesOnResult(values[1], 'toLangCountries');
     })
@@ -84,7 +87,7 @@ const detectLanguage = async (text) => {
     await makeRequest(url, headers, "GET").then(data => {
         response = data;
     }).catch(err => {
-        console.log(err);
+        alert(err);
     });
     return response.data.detections[0].language;
 }
@@ -102,11 +105,10 @@ const translateFromApi = async (sentence, langFrom, langTo) => {
     await makeRequest(url, headers, "GET").then(data => {
         translatedText = data.responseData.translatedText;
     }).catch(err => {
-        console.log(err);
+        alert(err);
     });
     return translatedText;
 }
-
 
 const getCountriesFromLngCode = async (code) => {
     const url = `https://restcountries.eu/rest/v2/lang/${code}`;
@@ -116,7 +118,7 @@ const getCountriesFromLngCode = async (code) => {
             countries = data.filter((country) => country['languages'][0]['iso639_1'] == code);
             resolve(countries);
         }).catch(err => {
-            console.log(err);
+            alert(err);
             reject(err)
         });
     })
