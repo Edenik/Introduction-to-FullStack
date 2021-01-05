@@ -5,6 +5,10 @@
 ## Demo: 
 [LIVE DEMO: Translate Text Worldwide](https://Edenik.com/translate)
 
+
+## Screenshots: 
+<img src="https://github.com/Edenik/Introduction-to-FullStack/blob/main/Translate%20app%20-%20Vanilla%20JS/media/screenshot.png?raw=true">
+
 ## Functions:
 - [X] - init() - first function to run on the load of the app
 
