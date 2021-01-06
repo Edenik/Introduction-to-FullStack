@@ -1,8 +1,8 @@
 
-# Introduction to FullStack web developer
+# Introduction to FullStack Web Development
 
 <h3 align="center">
-    In this repository you can find code samples from my FullStack tutoring classes.
+    In this repository you can find code samples from my FullStack Web Development tutoring classes.
 </h3>
 <h4 align="center">
     Enjoy 😃
