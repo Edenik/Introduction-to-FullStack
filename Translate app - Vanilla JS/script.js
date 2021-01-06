@@ -1,4 +1,6 @@
 let languages = [];
+const DETECT_LANGUAGE_API_KEY = "d51b128e12310bdcf96f0a7b2bca0635";
+const MY_MEMORY_API_KEY = "bd210f8d39mshaaa340100e6c6b5p186237jsnd44113e94e03";
 
 const init = () => {
     getLanguagesFromJsonFile();

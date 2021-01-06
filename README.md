@@ -11,7 +11,12 @@
 
 ## Codes Samples :
 - [X] [1. Work with API + Async/Await](https://github.com/Edenik/Introduction-to-FullStack/tree/main/Work%20with%20API%20%2B%20Async-Await) 
-- [X] [2. Translate app - Vanilla JS](https://github.com/Edenik/Introduction-to-FullStack/tree/main/Translate%20app%20-%20Vanilla%20JS) - Translate app that works with 3 APIs. This app uses Promise.all(), and Async/Await technique to make asynchronous requests with the APIs. [LIVE DEMO: Translate Text Worldwide](https://Edenik.com/translate)
+
+
+- [X] [2. Async-Await + Promise.all](https://github.com/Edenik/Introduction-to-FullStack/tree/main/Async-Await%20%2B%20Promise.all) - Work with JSONPLACEHOLDER API with Async/Await + Promise.all.
+
+
+- [X] [3. Translate app - Vanilla JS](https://github.com/Edenik/Introduction-to-FullStack/tree/main/Translate%20app%20-%20Vanilla%20JS) - Translate app that works with 3 APIs. This app uses Promise.all(), and Async/Await technique to make asynchronous requests with the APIs. [LIVE DEMO: Translate Text Worldwide](https://Edenik.com/translate)
 
 <p align="center"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FEdenik%2FIntroduction-to-FullStack&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></p>
 
