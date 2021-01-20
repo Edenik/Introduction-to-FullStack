@@ -17,6 +17,6 @@
 
 - [x] [4. Array Functions + String Functions](https://github.com/Edenik/Introduction-to-FullStack/tree/main/Array%20Functions%20%2B%20String%20Functions)
 
-- [x] [5. NodeJS Clean Architecture](https://github.com/Edenik/Introduction-to-FullStack/tree/main/NodeJS%20Clean%20Architecture)
+- [x] [5. NodeJS Clean Architecture - MVC Pattern](https://github.com/Edenik/Introduction-to-FullStack/tree/main/NodeJS%20Clean%20Architecture)
 
 <p align="center"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FEdenik%2FIntroduction-to-FullStack&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></p>
